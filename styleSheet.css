@@ -19,7 +19,7 @@ body div:first-child{
 
 img[src^= "images/"]{
     height: 100vh;
-    width: min(80vb ,100%);
+    width: min(100% ,100%);
 }
 
 .formBox{
@@ -63,12 +63,23 @@ form{
 
 label{
     display: block;
+    font-size: 1.7rem;
+}
+
+input{
+    height: 25px;
+    width: 200px;
+    font-size: 1.4rem;
+}
+
+li{
+    width: 240px;
 }
 
 ul{
     margin-top: 50px;
     margin-left: 50px;
-    max-width: 500px;
+    max-width: 600px;
     height: 300px;
     list-style: none;
     display: flex;
