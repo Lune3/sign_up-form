@@ -18,8 +18,8 @@ body div:first-child{
 }
 
 img[src^= "images/"]{
-    max-height: 100vh;
-    min-width: 80vb;
+    height: 100vh;
+    width: min(80vb ,100%);
 }
 
 .formBox{
