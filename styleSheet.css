@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     display: flex;
     padding: 0;
     margin: 0;
+    font-family: 'Jost', sans-serif;
 }
 
 body div:first-child{
@@ -71,6 +74,7 @@ input{
     height: 25px;
     width: 270px;
     font-size: 1.3rem;
+    border-radius: 4px;
 }
 
 li{
@@ -100,10 +104,43 @@ button{
     height: 40px;
     font-size: 1.2rem;
     text-align: center;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 8px;
 }
 
 button + p{
     font-size: 18px;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input:required {
+    border: 1px solid rgb(57, 57, 57);
+  }
+  
+input:optional {
+    border: 1px solid silver;
+}
+
+input:invalid:focus{
+    border: 2px red solid;
+}
+
+input:focus{
+    background-image: linear-gradient(rgb(243, 240, 240),rgb(243, 241, 241));
+    box-shadow: 3px 3px 5px rgb(160, 160, 160);
+    border: 2px rgb(171, 171, 171) solid;
+}
+
+input:invalid + div{
+    content: "hello";
 }
 
 

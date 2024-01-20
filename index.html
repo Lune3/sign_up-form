@@ -17,27 +17,32 @@
             <p>Your perfect skin care routine starts here</p>
         </div>
         <div>
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <ul>
                     <li>
                         <label for="name">First Name</label>
-                        <input type="text" name="user_name" id="name" required>
+                        <input type="text" name="user_name" id="name" required pattern="">
+                        <div></div>
                     </li>
                     <li>
                         <label for="last_name">Last Name</label>
                         <input type="text" name="user_last_name" id="last_name" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" name="user_email" id="email" required>
+                        <input type="email" name="user_email" id="email" placeholder="john@gmail.com">
+                        <div></div>
                     </li>
                     <li>
                         <label for="phoneNumber">Phone Number</label>
                         <input type="number" name="user_phoneNumber" id="phoneNumber" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="password">Password</label>
                         <input type="password" name="user_password" id="password" required>
+                        <div></div>
                     </li>
                     <li>
                         <label for="confirmPassword">Confirm Password</label>
@@ -46,7 +51,7 @@
                 </ul>
             </form>
             <div class="submission">
-                <button type="button">Create Account</button>
+                <button type="submit" form="form">Create Account</button>
                 <p>Already have an account? <a href="">Log In</a></p>
             </div>  
         </div>
