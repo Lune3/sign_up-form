@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --main-color: rgb(227, 224, 218);
+}
+
 body{
     display: flex;
     padding: 0;
@@ -30,7 +34,7 @@ img[src^= "images/"]{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: lightgray;
+    background-color: var(--main-color);
 }
 
 .accountCreation{
@@ -48,10 +52,12 @@ img[src^= "images/"]{
     padding-top: 20px;
     font-size: 4.2rem;
     margin-bottom: 2px;
+    font-weight: 500;
 }
 
 .accountCreation p:first-child + p{
     font-size: 1.3rem;
+    font-weight: 300;
 }
 
 .accountCreation + div{
@@ -106,7 +112,7 @@ button{
     text-align: center;
     background-color: white;
     font-family: inherit;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 8px;
 }
 
@@ -114,11 +120,13 @@ button + p{
     font-size: 18px;
 }
 
-input,
+input:not([type="password"]),
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
+    appearance: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 100%;
 }
 
 input:required {
@@ -129,18 +137,18 @@ input:optional {
     border: 1px solid silver;
 }
 
+input:valid:focus{
+    border: 2px green solid;
+}
+
 input:invalid:focus{
     border: 2px red solid;
 }
 
 input:focus{
-    background-image: linear-gradient(rgb(243, 240, 240),rgb(243, 241, 241));
+    background-image: linear-gradient(rgb(243, 240, 240),rgb(251, 250, 250));
     box-shadow: 3px 3px 5px rgb(160, 160, 160);
-    border: 2px rgb(171, 171, 171) solid;
-}
-
-input:invalid + div{
-    content: "hello";
+    border: 1px rgb(161, 161, 161) solid;
 }
 
 
